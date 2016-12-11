@@ -1,0 +1,10 @@
+import {Routes, RouterModule} from "@angular/router";
+import {ModuleWithProviders} from "@angular/core";
+
+export const routes: Routes = [{
+  path: '',
+  redirectTo: '/entry',
+  pathMatch: 'full'
+}];
+
+export const routing: ModuleWithProviders = RouterModule.forRoot(routes);
