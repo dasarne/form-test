@@ -1,3 +1,15 @@
-<p>
-  entry-form works!
-</p>
+<div class="container">
+  <h1>Entry Form</h1>
+  <form>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" [(ngModel)]="model.name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="age">Age</label>
+      <input type="text" class="form-control" id="age" [(ngModel)]="model.age" name="age">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+<debug-panel [data]="model"></debug-panel>
