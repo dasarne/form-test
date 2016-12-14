@@ -30,7 +30,7 @@ import {Component, Input, HostBinding, ChangeDetectionStrategy} from "@angular/c
     }
     label {
       display: block;
-      text-align: center;
+      text-align: right;
       height: 1.6em;
       padding: .4em;
       line-height: 1.3em;
@@ -52,7 +52,7 @@ import {Component, Input, HostBinding, ChangeDetectionStrategy} from "@angular/c
       overflow: auto;
     }
     pre {
-      font-size: 2em;
+      font-size: 12px;
       padding: 20px;
       margin: 0;
     }

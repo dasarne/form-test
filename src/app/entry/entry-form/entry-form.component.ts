@@ -8,23 +8,23 @@ import {Entry} from "../shared";
 })
 export class EntryFormComponent implements OnInit {
 
+  public model: Entry;
+  public submitted = false;
+
   constructor() {
   }
 
-  //Instantiate the model
-  model = new Entry(1, "Arne", 50);
-  submitted = false;
+  resetModel() {
+    this.model = new Entry(1, null, null);
+  }
 
   onSubmit() {
     this.submitted = true;
-  }
-
-  // TODO: Remove this when we're done
-  get diagnostic() {
-    return JSON.stringify(this.model);
+    console.log(JSON.stringify(this.model));
   }
 
   ngOnInit() {
+    this.resetModel();
   }
 
 }
